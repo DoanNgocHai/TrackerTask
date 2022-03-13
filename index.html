@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+    <title>Task Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Task Tracker</h1>
+            <button id="addTaskBtn" class="btn" style="background: green;">Add</button>
+        </div>
+        <div id= "addTask" class="add-form" style="display: block;">
+            <div class="form-control">
+                <label>Task</label>
+                <input id="text" type="text" placeholder="Add Task">
+            </div>
+            <div class="form-control">
+                <label>Day & Time</label>
+                <input id="day" type="text" placeholder="Add day">
+            </div>
+            <div class='form-control form-control-check' >
+                <label>Set Reminder</label>
+                <input id="reminder" type='checkbox' value="reminder"></input>
+            </div>
+            <input onclick="{submit()}" type="submit" class="btn btn-block">
+        </div>
+        <div id="tasks">
+           
+        </div>
+ 
+</body>
+</html>
